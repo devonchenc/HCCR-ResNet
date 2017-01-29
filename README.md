@@ -32,9 +32,6 @@ Caffe支持LMDB、LevelDB和HDF5格式的数据，我们需要将上一步预处
 
 ## 4.训练神经网络
 
-这里使用两种网络进行训练，与MNIST类似的深度卷积网络和深度残差网络。
+这里采用两种网络进行训练，一个是与MNIST类似的深度卷积网络HCCR3755_cnn_solver.prototxt，另外一个是深度残差网络HCCR3755_res20_solver.prototxt。
 
-对于3755字符识别，前者网络可以达到91.19%精度，而后者则高达97.23%的精度。
-
-
-以上所用的C++程序和字符编码在Github这里 [HCCR-ResNet](https://github.com/tianrolin/HCCR-ResNet/)
+对于3755字符识别分类，分别迭代10000次之后，前者网络可以达到91.19%精度，而后者则高达97.23%的精度。
