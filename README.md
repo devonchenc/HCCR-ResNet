@@ -10,13 +10,14 @@
 
 原来的数据库格式为*.gnt后缀名的文件，文件格式如下，
 
-名称 | 类型 | 长度 | Comment
----|---|---|---|---|---
-图像大小 | unsigned int | 4字节 | 单张图像字节数
-GB码 | char | 2字节 | "啊"=0xb0a1 Stored as 0xa1b0 |
-宽 | unsigned short | 2字节 | 列数
-高 | unsigned short | 2字节 | 行数
-数据 | unsigned char | 字节数=宽*高 | 按行存储
+
+| 名称 | 类型 | 长度 | Comment |
+|-----|-----|-----|-----|
+| 图像大小 | unsigned int | 4字节 | 单张图像字节数|
+| GB码 | char | 2字节 | "啊"=0xb0a1 Stored as 0xa1b0 |
+| 宽 | unsigned short | 2字节 | 列数|
+| 高 | unsigned short | 2字节 | 行数|
+| 数据 | unsigned char | 字节数=宽*高 | 按行存储|
 
 注意到这里的每张字符图像尺寸不同，所以需要进行resize预处理，这里将其尺寸统一resize为56x56，再在图像上下左右各补充4个像素的白边，最终补成64x64的图像。
 
