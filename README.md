@@ -2,7 +2,7 @@
 
 ## 1.下载数据库
 
-从中科院自动化所网站下载汉字手写体数据库[CASIA Online and Offline Chinese Handwriting Databases，](http://www.nlpr.ia.ac.cn/databases/handwriting/Download.html/)
+从中科院自动化所网站下载汉字手写体数据库[CASIA Online and Offline Chinese Handwriting Databases，](http://www.nlpr.ia.ac.cn/databases/handwriting/Download.html)
 
 这里使用的是HWDB1.1 Offline数据库，包含了国标GB2312-80收录的一级汉字，共计3755个字符。数据库分为训练集和测试集，其中训练集为240个人的手写字符，测试集为60个人。
 
